@@ -1,0 +1,148 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.6;
+}
+
+
+header {
+  background-color: #2d2b2b;
+  color: white;
+  padding: 10px 50px;
+  flex-shrink: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+
+nav .nav-left {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav .nav-left li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+nav .nav-left li a:hover {
+  background-color: white;
+  color: #f4b400;
+}
+
+
+nav .logo-con {
+  display: flex;
+  align-items: center;
+}
+
+nav .logo-con .logo {
+  width: 40px;
+  height: auto;
+  margin-right: 10px;
+}
+
+nav .logo-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  overflow: hidden;
+  flex-grow: 1;
+  max-height: calc(100vh - 120px);
+}
+
+.main .left {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.main .left img {
+  max-width: 100%;
+  height: auto;
+  margin-left: -173px;
+}
+
+.main .right {
+  flex: 1;
+  text-align: left;
+  padding-left: 30px;
+  position: relative;
+  max-height: 100vh;
+  overflow-y: auto;
+}
+
+.main .right h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.main .right p {
+  font-size: 20px;
+  margin-top: 20px;
+  line-height: 1.6;
+}
+
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #2d2b2b;
+  color: white;
+  flex-shrink: 0;
+}
+
+footer .icons {
+  margin: 15px 0;
+}
+
+footer .icons a {
+  margin: 0 10px;
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+footer .icons a:hover {
+  color: #f4b400;
+}
+
+footer p {
+  font-size: 14px;
+}
